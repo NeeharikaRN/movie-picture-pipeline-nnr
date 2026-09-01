@@ -4,16 +4,14 @@ WORKDIR /
 RUN useradd -u 1000 -m app
 RUN apt-get update && \
   apt-get install -y \
-  libpcre3 \
-  libpcre3-dev \
+  libpcre2-dev \
   build-essential \
   gcc \
-  linux-headers-generic \
   libssl-dev \
   libffi-dev \
   && pip install pipenv
 RUN mkdir -p /var/www/app && mkdir /app
 COPY Pipfile* /app
-RUN cd /app && pipenv install --system --deploy
+RUN cd /app && pipenv install --system --deploy --skip-lock
 COPY . /app
 CMD uwsgi --http :5000 --master --enable-threads -s /var/www/app/app.sock --manage-script-name --mount /=app:app
