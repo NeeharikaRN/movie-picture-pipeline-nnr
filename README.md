@@ -1,3 +1,24 @@
+GitHub Repository: https://github.com/NeeharikaRN/movie-picture-pipeline-nnr
+
+Frontend URL: http://a27a09ae8a56c482c8cda4e328a87136-1437580366.us-east-1.elb.amazonaws.com
+<img width="1918" height="458" alt="image" src="https://github.com/user-attachments/assets/b9200c72-102d-420b-96a4-36938b38bc15" />
+
+Backend URL: http://ad40b3a42f89b4b758fe1547cfad328a-1153490490.us-east-1.elb.amazonaws.com/movies
+<img width="1918" height="256" alt="image" src="https://github.com/user-attachments/assets/f19f23ac-1597-4538-a2c3-de3f56476acd" />
+
+GitHub Actions runs:
+- Frontend CI: https://github.com/NeeharikaRN/movie-picture-pipeline-nnr/actions/workflows/frontend-ci.yaml
+<img width="1878" height="813" alt="image" src="https://github.com/user-attachments/assets/02a8eb0f-3819-4cb3-a13f-c206f23b2bb8" />
+
+- Frontend CD: https://github.com/NeeharikaRN/movie-picture-pipeline-nnr/actions/workflows/frontend-cd.yaml
+<img width="1865" height="822" alt="image" src="https://github.com/user-attachments/assets/2032441c-116c-466a-b2db-32052a706362" />
+
+- Backend CI: https://github.com/NeeharikaRN/movie-picture-pipeline-nnr/actions/workflows/backend-ci.yaml
+<img width="1910" height="821" alt="image" src="https://github.com/user-attachments/assets/807782c3-3400-45d9-858d-b0a2f0fcdff7" />
+
+- Backend CD: https://github.com/NeeharikaRN/movie-picture-pipeline-nnr/actions/workflows/backend-cd.yaml
+<img width="1907" height="822" alt="image" src="https://github.com/user-attachments/assets/1b7abeed-60bd-4fd6-b94f-9ac174bfc8a1" />
+
 # Movie Picture Pipeline
 
 You've been brought on as the DevOps resource for a development team that manages a web application that is a catalog of Movie Picture movies. They're in dire need of automating their development workflows in hopes of accelerating their release cycle. They'd like to use Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.
